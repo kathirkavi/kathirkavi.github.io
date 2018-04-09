@@ -187,7 +187,7 @@ module.exports = ".message {\r\n    border-radius: 50px;\r\n    margin: 0 15px 1
 /***/ "./src/app/chat/chat-dialog/chat-dialog.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Angular Bot</h1>\n\n<ng-container *ngFor=\"let message of messages | async\">\n\n  <div class=\"message\" [ngClass]=\"{ 'from': message.sentBy === 'bot',\n                                    'to':   message.sentBy === 'user' }\">\n    {{ message.content }}\n  </div>\n\n</ng-container>\n\n\n<label for=\"nameField\">Your Message</label>\n\n\n<input [(ngModel)]=\"formValue\" (keyup.enter)=\"sendMessage()\" type=\"text\">\n\n<button (click)=\"sendMessage()\">Send</button>"
+module.exports = "<h1>Kathir's Chat Bot</h1>\n\n<ng-container *ngFor=\"let message of messages | async\">\n\n  <div class=\"message\" [ngClass]=\"{ 'from': message.sentBy === 'bot',\n                                    'to':   message.sentBy === 'user' }\">\n    {{ message.content }}\n  </div>\n\n</ng-container>\n\n\n<label for=\"nameField\">Your Message</label>\n\n\n<input [(ngModel)]=\"formValue\" (keyup.enter)=\"sendMessage()\" type=\"text\">\n\n<button (click)=\"sendMessage()\">Send</button>"
 
 /***/ }),
 
